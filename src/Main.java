@@ -34,7 +34,7 @@ public class Main {
         System.out.println("Между лекциями прошло " + duration.toDays() + " дней");
         System.out.println("Между лекциями прошло " + duration.toHours() + " часов");
         System.out.println("Между лекциями прошло " + duration.toMinutes() + " минут");
-        System.out.println("Между лекциями прошло " + duration.toSeconds() + " секунд");
+        System.out.println("Между лекциями прошло " + duration.toSeconds() + " секунд" + "\n");
 
     }
 
@@ -43,7 +43,7 @@ public class Main {
         Duration duration = Duration.between(startLection, finishLection);
 
         System.out.println("Количество минут " + duration.toMinutes());
-        System.out.println("Количество секунд " + duration.toSeconds());
+        System.out.println("Количество секунд " + duration.toSeconds()+ "\n");
 
     }
 
@@ -53,7 +53,7 @@ public class Main {
 
         LocalDateTime localDateTimeParser = LocalDateTime.parse(str, dateTimeFormatter);
 
-        System.out.println(localDateTimeParser);
+        System.out.println(localDateTimeParser + "\n");
 
     }
 
@@ -63,7 +63,7 @@ public class Main {
 
         String newDateForm = dateTimeFormatter.format(localDateTime);
 
-        System.out.println(newDateForm);
+        System.out.println(newDateForm + "\n");
 
     }
 
